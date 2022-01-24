@@ -5,7 +5,7 @@ very fast with very easy to remember class name.
 The Cdn link :
 
 <pre><code>
-&lt;script src="https://cdn.jsdelivr.net/gh/JcerelusDev/ClassicUi/Style/Css/classicui.min.css"&gt;&lt;/script&gt;
+&lt;link rel="styleSheet href="https://cdn.jsdelivr.net/gh/JcerelusDev/ClassicUi/Style/Css/classicui.min.css"/&gt;
 </code></pre>
 
 
