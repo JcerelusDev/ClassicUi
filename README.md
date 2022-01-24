@@ -4,5 +4,4 @@ very fast with very easy to remember class name.
 
 Documentation link :
 
-https://github.com/JcerelusDev/ClassicUi.wiki
-
+https://github.com/JcerelusDev/ClassicUi/wiki
