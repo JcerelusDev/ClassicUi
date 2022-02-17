@@ -1,1 +1,230 @@
-V
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyCssLibrary</title>
+ <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+<link rel="styleSheet" href="https://cdn.jsdelivr.net/gh/JcerelusDev/ClassicUi/Style/Css/classicui.min.css"/>
+<style type="text/css">
+
+.main-title{
+ text-align:center;
+ margin-top: 80px;
+ font-family: monospace;
+ font-size: 20px;
+}
+.caroussel-custom{
+ background: rgba(0,0,0,0.2);
+}
+
+</style>
+</head>
+<body>
+
+<!-- header has many different background (primary ,secondary,success , warning , danger) 
+The same can be applied to navbar, footer and button
+
+You can choose to not add header tag you will be provided a default one
+-->
+
+<header class="header header-secondary">Jcerelusdev</header>
+<nav class="navb navb-secondary">
+<a class="bars" href="#" data-menu="bars">&equiv;</a>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Dashboard</a>
+<a href="#">Preferences</a>
+<a href="#">Our Team</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
+<a href="#">About_us</a>
+</nav>
+
+<div class="sidebar sidebar-secondary">
+ <a class="cross" href="#">&times;</a>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Dashboard</a>
+<a href="#">Preferences</a>
+<a href="#">Our Team</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
+<a href="#">About_us</a>
+</div>
+
+
+<!--
+Those flex class below are for layout.
+
+flex is the standard 
+for larger screen = 4 columns.
+for mobile devices = 1 column.
+
+flex-3 is  for larger screen only = 3 columns.
+
+flex-2 is for mobile device only = 2 columns
+
+and card is to add 3d effect
+-->
+
+<h4 class="main-title">We Learn Together .</h4>
+<div class="container">
+
+<div class="flex flex-2 flex-3 card">
+<p>I am a paragraph and i think
+that i am  responsive <br>  made using ClassicUI,
+it is an amazing system</p>
+<button class="btn btn-primary">Primary</button>
+</div>
+
+<div class="flex flex-2 flex-3 card">
+<p>I am a paragraph and i think that i am  responsive 
+<br>  made using ClassicUI,
+it is an amazing system.</p>
+<button class="btn btn-warning">Warning</button>
+</div>
+
+<div class="flex flex-2 flex-3 card">
+<p>I am a paragraph and i think
+that i am  responsive <br>  made using ClassicUI,
+it is an amazing system</p>
+<button class="btn btn-success">Success</button>
+</div>
+
+<div class="flex flex-2 flex-2 flex-3 card">
+<p>I am a paragraph and i think
+that i am  responsive <br>  made using ClassicUI,
+it is an amazing system</p>
+<button class="btn btn-secondary">Secondary</button>
+</div>
+
+<div class="flex flex-2 flex-3 card">
+<p>I am a paragraph and i think
+that i am  responsive <br> made using ClassicUI,
+it is an amazing system</p>
+<button class="btn btn-danger">Danger</button>
+</div>
+
+<div class="flex flex-2  flex-3 card">
+<p>I am a paragraph and i think
+that i am  responsive <br> made using ClassicUI,
+it is an amazing system</p>
+<button class="btn btn-secondary">Secondary</button>
+</div>
+
+
+<div class="flex flex-2  flex-3 card">
+<p>I am a paragraph and i think
+that i am  responsive <br> made using ClassicUI,
+it is an amazing system</p>
+<button class="btn btn-success">Success</button>
+</div>
+
+
+<div class="flex flex-2  flex-3 card">
+<p>I am a paragraph and i think
+that i am  responsive <br> made using ClassicUI,
+it is an amazing system
+<button class="btn btn-warning">Warning</button>
+</div>
+
+<div class="flex flex-2  flex-3 card">
+<p>I am a paragraph and i think
+that i am  responsive <br> made using ClassicUI,
+it is an amazing system</p>
+<button class="btn btn-danger">Danger</button>
+</div>
+
+
+
+<!--caroussel example
+
+slider3 for 3 images
+slider5 for 5 images
+slider6 for 6 images
+
+-->
+
+<div class="caroussel card">
+<span class="caroussel-items slider6 caroussel-custom  ">I am  caroussel 1</span>
+<span class="caroussel-items slider6 caroussel-custom ">I am  caroussel 2</span>
+<span class="caroussel-items slider6 caroussel-custom ">I am  caroussel 3</span>
+<span class="caroussel-items slider6 caroussel-custom ">I am  caroussel 4</span>
+<span class="caroussel-items slider6 caroussel-custom ">I am  caroussel 5</span>
+<span class="caroussel-items slider6 caroussel-custom ">I am  caroussel 6</span>
+</div>
+
+
+
+
+
+<!-- form example -->
+
+<div class=" flex form form-secondary">
+<form>
+<legend>Registration Form</legend>
+<input type="text" placeholder="firstname">
+<input type="text" placeholder="lastname">
+<input type="mail" placeholder="email">
+<input type="password" placeholder="password">
+<br>
+<button class="btn">Submit</button>
+</form>
+</div>
+
+
+
+
+
+
+<!--
+footer , footer-text , privacy , faq and copywrite are the system class meaning they must be used.
+-->
+
+<footer class="footer footer-secondary">
+<p class="privacy"><a class="privacy" href="#">Our privacy Policy.</a></p>
+<p class="faq"><a class="faq" href="#">FAQ.</a></p>
+<p class="copywrite">&copy;Jcerelusdev 2022 .</p>
+<p class="footer-text">We offering the best services.  </p>
+<p class="footer-text">Our website using cookies. </p>
+<p class="footer-text">Together we can change the world. </p>
+</footer>
+
+
+</div>
+
+
+<script type="text/javascript">
+
+var openSlide = document.querySelector(".sidebar")
+var cross = document.querySelector(".cross")
+var bars = document.querySelector(".bars")
+
+bars.onclick = OpenSlide
+cross.onclick = CloseSlide
+
+function OpenSlide(){
+openSlide.style.width="120px"
+}
+
+function CloseSlide(){
+openSlide.style.width="0px"
+}
+
+// use to close sidebar after clicking on a link
+
+openSlide.onclick=function(e){
+var target = Array.from(e.target.children)
+if(target){
+CloseSlide()
+}
+}
+
+
+</script>
+</body>
+</html>
+
+
+
+
