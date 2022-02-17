@@ -1,5 +1,5 @@
 # ClassicUi 
-is a css library that can help us build any web based project
+is a css library that can help us to design any web based project
 very fast with some very easy to remember class names.
 
 The Cdn link :
